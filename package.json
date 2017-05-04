@@ -1,7 +1,6 @@
 {
   "name": "amit",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.3",
     "localStorage": "^1.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitsh786/Angular-Node-MongoDB-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amitsh786/Angular-Node-MongoDB-project/issues"
+  },
+  "homepage": "https://github.com/amitsh786/Angular-Node-MongoDB-project#readme",
+  "description": ""
 }

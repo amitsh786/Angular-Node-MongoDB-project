@@ -1,0 +1,131 @@
+how to delete the <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./css/style1.css" >
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/path/to/packery.pkgd.min.js"></script>
+  <script src="/home/bridgeit/Desktop/htmlpractise/node-mongoDBProject/public/js/script.js"></script>
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
+  <!-- <script src="/home/bridgeit/Desktop/htmlpractise/todoAPPJQuery/script/script.js"></script> -->
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:		#E88601" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></a>
+            <a class="navbar-brand" href="#">Google Keep</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Messages </a></li>
+             	<li><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Help</a></li> -->
+              <li><a href="#"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> </a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> </a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> </a></li>
+                <li><a href="#logout"><span  id="logout" class="glyphicon glyphicon-off" aria-hidden="true"></span> </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span> </a></li>
+
+            </ul>
+
+            <form class="navbar-form navbar-right" action="#" method="GET">
+           		<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search..." id="query" name="search" value="">
+                  	<div class="input-group-btn">
+                    	<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+                  	</div>
+				</div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper" class="toggled">
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" style="background-color:		#C0C0C0">
+            <ul class="sidebar-nav">
+              	<li class="sidebar-brand">
+                    <br>
+
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+                </li>
+                <li >
+                  <a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Notes  </a>
+                  </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Remainders</a>
+                </li>
+                 <li>
+                    <a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash</a>
+                </li><br>
+                <div id="labeldiv">
+                <label id="label">Label</label>
+                <li>
+                    <a href="#">  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create New Label</font>
+                </li>
+              </div>
+                 <li>
+                    <a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Help</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Settings</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div id="main">
+      <div  id="clickHere">
+          <input type="text" id="i1"  style="box-shadow:;border:0.5px solid black;outline:none;height:35px;width:400px;margin-left:256px;" placeholder="Take a note..."></input>
+      </div>
+          <div id="msgbox" style="margin-left:256px;box-shadow:;border:none; ">
+                <!-- <textarea id="i2" size="40" style="outline:none;height:45px;font-size:20px;border:none;" placeholder="Title..."></textarea><br> -->
+                <!-- <textarea id="i3" size="61" style="outline:none;height:45px;border:none;"placeholder="Take a note.."></textarea><br> -->
+                  <textarea id="i2" size="40" style="outline:none;height:55px;font-size:15px;border:none;width:600px" placeholder="Title..."></textarea><br>
+                  <textarea id="i3" style="outline:none;height:55px;font-size:15px;border:none;width:600px" placeholder="Take a note.."></textarea><br>
+                <p><i style="margin-left:10px" class="fa fa-hand-pointer-o fa-lg" aria-hidden="true"></i>
+                <i style="margin-left:10px" class="fa fa-user-plus fa-lg" aria-hidden="true"></i>
+                <i style="margin-left:10px" class="fa fa-paint-brush fa-lg" aria-hidden="true"></i>
+                <i style="margin-left:10px" class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+                <i style="margin-left:10px" class="fa fa-archive fa-lg" aria-hidden="true"></i>
+                <button style="outline:none;margin-left:0em;border:none;background-color:white" type="button" id="done"><strong>DONE</strong></button>
+                <button style="outline:none;margin-left:1em;border:none;background-color:white" type="button" id="delete"><strong>delete</strong></button>
+
+            </p>
+        </div>
+      </div>
+        <!-- <div id="maindiv" style="border:1px solid black";height="700px";width="800px"> -->
+          <div id="boxcreate" style=margin-left:250px;>
+ </div>
+</body>
+<script>
+  $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+      // $("#boxcreate").append(' <div> <input type="text" class="form-control" id="frm" placeholder="title"></div> <div><input type="text" id="frmtitle" class="form-control" placeholder="text"></div><div align="center">  ');
+
+</script>
+</html>

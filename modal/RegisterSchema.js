@@ -10,11 +10,15 @@ var connectDB = require('../config/config.js');
 
 // app.set('Secret', 'amit');
 userInfoSchema = mongoose.Schema({
-    id: {
-        type: Number,
-        require: true
+
+    fname: {
+        type: String,
+        minlength: 4,
+        maxlength: 128,
+        required: true,
+
     },
-    name: {
+    lname: {
         type: String,
         minlength: 4,
         maxlength: 128,
@@ -25,7 +29,7 @@ userInfoSchema = mongoose.Schema({
         type: Number,
         minlength: 10,
         maxlength: 10,
-        unique: true,
+        // unique: true,
         required: true,
     },
     email: {
@@ -38,7 +42,7 @@ userInfoSchema = mongoose.Schema({
     },
     password: {
         type: String,
-        minlength: 5,
+        minlength: 8,
         maxlength: 100,
         required: true
     }
@@ -56,21 +60,26 @@ userInfoSchema.statics.decrypt = function(text) {
     return dec;
 }
 userInfoSchema.statics.saveUser = function(data, cb) {
+  // console.log("saveUserdata"+data.email);
+
     var ref = this;
     this.findOne({
         email: data.email
     }, function(error, user) {
         if (user) {
+          console.log("user"+user);
           cb(null,false);
         } else {
-             var userObj = new ref(data);
+           console.log("data"+ data);
+          var userObj = new ref(data);
+           console.log("userObj"+ userObj);
           userObj.save(cb);
         }
     });
 }
 userInfoSchema.statics.ValidateUser = function(data, cb) {
     var token;
-    userInfo.findOne({  email: data.email },cb);
+    userInfo.findOne({ email: data.email },cb);
   };
 userInfoSchema.statics.getRegisterUserProfile = function(userid, cb) {
   this.findById(userid,cb);
